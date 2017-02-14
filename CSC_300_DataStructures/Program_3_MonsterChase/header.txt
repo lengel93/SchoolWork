@@ -1,0 +1,44 @@
+/*************************************************************************//**
+ * @file
+ *
+ * @mainpage Program 3 
+ *
+ *
+ * @author Lyndon Engel
+ *
+ * @date 4/29/2016
+ *
+ * @par Professor:
+ *         Hinker
+ *
+ * @par Course:
+ *         CSC 300
+ *
+ * @par Location:
+ *         McLaury -  Room 205
+ *
+ * @section program_section Program Information
+ *
+ * @details 
+ * The monster uses the A-star algorithm to find the fastest path to the player. While
+ * the Player trys to get with in two squares of the monster and then just dip, dive, and
+ * dodge him. At least thats what hes suppose to do. 
+ *
+ * @section compile_section Compiling and Usage
+ *
+ * @par Compiling Instructions:
+ *
+ * the program file/a map and then/how fast you want it to go
+ *
+ * @par Usage:
+   @verbatim
+
+   @endverbatim
+ *
+ * @section todo_bugs_modification_section Todo, Bugs, and Modifications
+ *
+ * @bug 
+ * - The players path is a little messed up.
+ *
+ *
+ *****************************************************************************/
