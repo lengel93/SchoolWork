@@ -5,7 +5,7 @@
 *
 * @section course_section Course Information
 *
-* @author Matt Achen, Ian Beamer, Lyndon Engel
+* @author Matt Achen, Lyndon Engel
 *
 * @date 3-30-2016
 *

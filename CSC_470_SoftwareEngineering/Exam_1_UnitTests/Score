@@ -1,0 +1,107 @@
+Yes Project name follows direction (e.g. csc470_spring17_exam1)
+Yes Tests compile using 'make run_tests'
+Yes Tests run and pass
+Yes Tests run quickly
+- Tests detect breaking change in Point::constructor 
+    - xCoord = x changed to xCoord = y detected
+        - ConstructorTest.PointCons
+        - ContainsTest.SphereCon
+        - ContainsTest.RectCon
+    - xCoord = x changed to xCoord = z detected
+        - ConstructorTest.PointCons
+        - DistanceTest.Distance
+        - ContainsTest.SphereCon
+    - yCoord = y changed to yCoord = x detected
+        - ConstructorTest.PointCons
+        - ContainsTest.SphereCon
+    - yCoord = y changed to yCoord = z detected
+        - ConstructorTest.PointCons
+        - ContainsTest.SphereCon
+    - zCoord = z changed to zCoord = x detected
+        - DistanceTest.Distance
+        - ContainsTest.SphereCon
+        - ContainsTest.RectCon
+    - zCoord = z changed to zCoord = y detected
+        - DistanceTest.Distance
+        - ContainsTest.SphereCon
+        - ContainsTest.RectCon
+- Tests detect breaking change in Sphere::constructor
+    - radius = r changed to radius = 0.0 detected by:
+        - ConstructorTest.SphereCons
+        - VolumeTest.SphereVolume
+        - ContainsTest.SphereCon
+- Tests detect breaking change in Cube::constructor
+    - side = s changed to side = 0.0 detected by:
+        - ConstructorTest.CubeCons
+        - VolumeTest.CubeVolume
+        - ContainsTest.CubeCon
+- Tests detect breaking change in RectParPiped::constructor
+    - width = w changed to width = d detected by:
+        - ConstructorTest.RectCons
+        - VolumeTest.RectVolume
+    - width = w changed to width = h detected by:
+        - ConstructorTest.RectCons
+        - VolumeTest.RectVolume
+        - ContainsTest.RectCon
+    - height = h changed to height = w detected by:
+        - ConstructorTest.RectCons
+        - VolumeTest.RectVolume
+        - ContainsTest.RectCon
+    - height = h changed to height = d detected
+        - ConstructorTest.RectCons
+        - VolumeTest.RectVolume
+        - ContainsTest.RectCon
+    - depth = d changed to depth = h detected
+        - ConstructorTest.RectCons
+        - VolumeTest.RectVolume
+    - depth = d changed to depth = w detected
+        - ConstructorTest.RectCons
+        - VolumeTest.RectVolume
+- Tests detect breaking change in Cube::contains
+    - Invert true / false conditions detected by:
+        - ContainsTest.CubeCon
+    - All paths return true not detected
+    - All paths return false detected by:
+        - ContainsTest.CubeCon
+    - Setup getx() -> get[y,z] not detected
+    - Setup gety() -> get[x,z] not detected
+    - Setup getz() -> get[y,x] not detected
+    - Setup side * .5 changed to side not detected
+- Tests detect breaking change in Sphere::contains
+    - Invert true / false conditions detected
+        - ContainsTest.SphereCon
+    - All paths return true not detected
+    - All paths return false detected
+        - ContainsTest.SphereCon
+    - Conditional dist <= radius changed to dist < radius detected
+        - ContainsTest.SphereCon
+- Tests detect breaking change in RectParPiped::contains
+    - Invert true / false conditions detected by:
+        - ContainsTest.RectCon
+    - All paths return true detected
+    - All paths return false detected
+        - ContainsTest.RectCon
+    - Setup getx() -> get[y,z] not detected
+    - Setup gety() -> get[x,z] not detected
+    - Setup getz() -> get[y,x] not detected
+    - Setup depth*.5 changed to depth not detected
+    - Setup width*.5 changed to width not detected
+    - Setup height*.5 changed to height not detected
+- Tests detect breaking change in Sphere::volume
+    - Changed calculation '*' to '+' detected by:
+        - VolumeTest.SphereVolume
+- Tests detect breaking change in Cube::volume
+    - Changed calculation from side*side*side to 2*side*side detected by:
+        - VolumeTest.CubeVolume
+- Tests detect breaking change in RectParPiped::volume
+    - Change calculate (width*depth*height) to (width*depth*depth) not detected
+    - Change calculate (width*depth*height) to (width*height*width) not detected
+No  Tests detect breaking change in Point::distance
+- Git log shows good repository behavior
+   Yes Frequent commits (52 commits)
+   Not always Descriptive commit messages
+
+Comments:
+
+	- Good job Lyndon.  Compiles clean.  Many of the breaking changes are
+      detected.  Test failures usually lead me to the right part of the code.
