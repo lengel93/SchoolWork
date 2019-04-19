@@ -1,0 +1,7 @@
+@start
+get 30 day moving average for msft
+use start
+
+@goodMicrosoft
+get 60 day moving average for msft
+use start

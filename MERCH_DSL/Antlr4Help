@@ -1,0 +1,14 @@
+For installation of antlr and tools:
+	https://blog.knoldus.com/testing-grammar-using-antlr4-testrig-grun/
+
+For running antlr Java:
+	%antlr4 Grammer.g4
+	%javac Grammer*.java
+	%grun Grammer startRule -gui 'testfile'
+
+For compiling in Python3:
+	%antlr4 -Dlanguage=Python3 Grammer.g4
+	
+* Still need main file to take files and stream to the .py or .java files 
+
+

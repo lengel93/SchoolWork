@@ -1,0 +1,5 @@
+if get 30 day moving average for googl is equal to 0 use tag
+
+write test passed
+@tag
+

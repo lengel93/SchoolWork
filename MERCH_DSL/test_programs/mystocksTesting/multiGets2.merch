@@ -1,0 +1,6 @@
+# mutiple gets on different lines 
+
+mystocks are aapl, googl, msft
+
+get 30 day moving average for mystocks
+get 60 day moving average for mystocks

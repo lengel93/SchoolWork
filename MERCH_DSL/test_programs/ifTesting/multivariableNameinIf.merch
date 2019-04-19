@@ -1,0 +1,5 @@
+mystocks are googl msft
+if get 30 day moving average for mystocks is greater than 12.2 use tag
+
+@tag
+write there should be an error message above this line

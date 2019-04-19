@@ -1,0 +1,7 @@
+mystocks are aapl, googl, msft
+
+get 60 day moving average for mystocks
+
+wait 10 seconds
+
+get 30 day moving average for mystocks

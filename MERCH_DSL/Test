@@ -1,0 +1,18 @@
+google is GOOGL
+google is MSFT
+@tag
+if get 30 day moving average for google is greater than 12.2 get 30 day moving average for google
+if get 10 day moving average for google is greater than 12 wait 2 seconds   
+if get 30 day moving average for google is greater than 12.2 write hello
+if get 30 day moving average for google is greater than 12.2 @tag
+if get 30 day moving average for google is greater than 12.2 if get 30 day moving average for google is greater than 12.2 write double if
+if get 30 day moving average for google is greater than 12.2 this is invalid
+
+if get 30 day moving average for google is less than 12.2 get 30 day moving average for google
+if get 10 day moving average for google is less than 12 wait 2 seconds   
+if get 30 day moving average for google is less than 12.2 write hello
+if get 30 day moving average for google is less than 12.2 @tag
+if get 30 day moving average for google is less than 12.2 if get 30 day moving average for google is greater than 12.2 write double if
+if get 30 day moving average for google is less than 12.2 this is invalid
+
+if get 30 day moving average for google is greater than 12.2 use tag

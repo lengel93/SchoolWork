@@ -1,0 +1,22 @@
+# test tags use wait and a loop
+
+@start
+wait 10 seconds
+if get price for msft is greater than 100 use goodMicrosoft
+if get price for msft is less than 100 use badMicrosoft
+if get price for msft is equal to 100 use decentMicrosoft
+use start
+
+@goodMicrosoft
+get closing price for msft
+get 30 day moving average for msft
+get 60 day moving average for msft
+use start
+
+@badMicrosoft
+write microsoft is bad
+use start
+
+@decentMicrosoft
+write microsoft is almost good
+use start

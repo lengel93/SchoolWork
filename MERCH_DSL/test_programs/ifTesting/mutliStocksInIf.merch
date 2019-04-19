@@ -1,0 +1,6 @@
+if get 30 day moving average for googl msft is greater than 12 use tag
+
+get 30 day moving average for msft
+@tag
+write the line above should be a python error message
+

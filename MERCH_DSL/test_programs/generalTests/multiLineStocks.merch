@@ -1,0 +1,5 @@
+# stocks on multiple lines
+mystocks are aapl, 
+             googl,
+			 msft
+get 30 day moving average for mystocks

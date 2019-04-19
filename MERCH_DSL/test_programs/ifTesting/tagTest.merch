@@ -1,0 +1,6 @@
+if get 30 day moving average for googl is greater than 12.2 use tag
+
+get 30 day moving average for msft
+@tag
+write should not output movingAverage for msft
+

@@ -1,0 +1,3 @@
+# mutiple gets on different lines
+get 30 day moving average for aapl, googl, msft
+get 60 day moving average for aapl, googl, msft

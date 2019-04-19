@@ -1,0 +1,8 @@
+@start
+wait 10 seconds
+use goodMicrosoft
+
+@goodMicrosoft
+get 30 day moving average for msft
+get 60 day moving average for msft
+use start

@@ -1,0 +1,5 @@
+# test for detecting closing price function
+
+mystocks are aapl, googl, msft
+
+get closing price for mystocks
